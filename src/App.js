@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import NasaDataList from './Components/DataList/NasaDataList';
+import NavBar from './Components/Navbar/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <NavBar />
+      <div className="DataListContainer">
+        <NasaDataList />
+      </div>
     </div>
   );
 }
